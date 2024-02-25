@@ -22,7 +22,7 @@ public class ItemRepository {
         return store.get(id);
     }
 
-    public List<Item> findAll() {
+    public List<Item> findAll() {   //ArrayList로 한 번 감싸서 리턴할 경우 store에 변경이 생기지 않아서 좋은 방식이다.
         return new ArrayList<>(store.values());
     }
 
